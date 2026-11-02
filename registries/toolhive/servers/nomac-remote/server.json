@@ -1,0 +1,85 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "io.github.stacklok": {
+        "https://mcp.nomac.app/mcp": {
+          "custom_metadata": {
+            "author": "NoMac",
+            "homepage": "https://nomac.app/install"
+          },
+          "overview": "## NoMac (Remote)\n\nNoMac's hosted MCP server gives an agent cloud iPhone Simulators and macOS VMs with Xcode. On a phone, the agent builds and runs an iOS app from a git repository or an uploaded folder, reads the screen as text, taps and types by label, reads app logs and runs tests. On a Mac, it runs shell commands, builds with `xcodebuild`, reads and writes files, takes screenshots and sends keyboard and mouse input. Use it to build and test iOS and macOS apps from Linux, Windows or a cloud agent without a Mac.\n\n### Setup\n\nYou need a NoMac account with prepaid credit. Run `thv run nomac-remote --remote-auth` and sign in to NoMac in the browser. The server supports dynamic client registration, so no API key, pre-created OAuth application, or custom headers are required.\n\nPhones and Macs are billed per minute from the account's credit while they run; prices are at https://nomac.app. Each Mac is a single-tenant VM that is deleted when its session stops; files in `~/drive` are kept between sessions.",
+          "status": "Active",
+          "tags": [
+            "remote",
+            "ios",
+            "macos",
+            "xcode",
+            "simulator",
+            "mobile",
+            "testing"
+          ],
+          "tier": "Official",
+          "tools": [
+            "get_mac_credits",
+            "get_mac_checkout",
+            "start_mac",
+            "get_mac_session",
+            "extend_mac",
+            "stop_mac",
+            "exec_mac",
+            "get_mac_job",
+            "cancel_mac_job",
+            "write_mac_file",
+            "read_mac_file",
+            "create_mac_link",
+            "get_mac_file_link",
+            "screenshot_mac",
+            "mac_input",
+            "open_mac_desktop",
+            "mac_recording",
+            "request_secret",
+            "install_secrets",
+            "report_issue",
+            "phone",
+            "phone_devices",
+            "phone_device_use",
+            "phone_app_run",
+            "phone_app_control",
+            "phone_app_logs",
+            "phone_ui_look",
+            "phone_ui_act",
+            "phone_screen_record",
+            "phone_tests_run",
+            "phone_job_status",
+            "phone_job_cancel",
+            "phone_upload_link"
+          ]
+        }
+      }
+    }
+  },
+  "description": "Cloud iPhones and Macs with Xcode for AI agents: build, run and test iOS apps, use the screen.",
+  "icons": [
+    {
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ],
+      "src": "https://raw.githubusercontent.com/stacklok/toolhive-registry/main/registries/toolhive/servers/nomac-remote/icon.svg"
+    }
+  ],
+  "name": "io.github.stacklok/nomac-remote",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.nomac.app/mcp"
+    }
+  ],
+  "repository": {
+    "source": "github",
+    "url": "https://github.com/gergomiklos/nomac-plugin"
+  },
+  "title": "NoMac (Remote)",
+  "version": "1.0.0"
+}
